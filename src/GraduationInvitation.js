@@ -60,9 +60,9 @@ const GraduationInvitation = () => {
             <div className="note-box">
               <p className="note-title">📝 Ghi chú:</p>
               <p className="note-text">
-                <h3>
-                    Xin vui lòng makeup, ăn bận lòng lộn. <span className="inline-text">"Nói vậy thui chứ tui thì đơn giản hà"</span>
-                </h3>    
+                {/* <h3>
+                    Xin vui lòng makeup, lên đồ đơn giản. <span className="inline-text">"Sợ đẹp hơn tui thoi"</span>
+                </h3>     */}
                 <h3>
                     Sự hiện diện của <span className="highlight-name">{name}</span> là vinh dự của tui🫶.
                 </h3>
