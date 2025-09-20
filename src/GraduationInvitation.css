@@ -1,0 +1,442 @@
+/* Container và nền */
+.page-container-light {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ebf8ff, #ebf4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.page-container-dark {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a, #2c5282, #1e3a8a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Card */
+.card-light {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  padding: 2rem;
+  max-width: 42rem;
+  width: 100%;
+  text-align: center;
+  border: 2px solid gold;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-dark {
+  background: rgba(255,255,255,0.95);
+  border-radius: 1.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  padding: 2rem;
+  max-width: 28rem;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Decorative circles */
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  transform: translate(-3rem, -3rem);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 8rem;
+  height: 8rem;
+  transform: translate(4rem, 4rem);
+}
+
+.blue-light {
+  background-color: #bfdbfe;
+}
+
+.yellow-light {
+  background-color: #fef3c7;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Image containers */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.image-small {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.image-medium {
+  width: 12.5rem;
+  height: 9.375rem;
+  object-fit: cover;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/* Titles */
+.title-large {
+  font-size: 2.25rem; /* 36px */
+  font-family: serif;
+  font-weight: 700;
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+}
+
+.title-medium {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 1.5rem;
+}
+
+.title-medium-dark {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 700;
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+}
+
+.serif {
+  font-family: serif;
+}
+
+/* Invitation text */
+.invitation-text {
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  padding: 1.5rem 0;
+  margin: 1.5rem 0;
+  color: #4a5568;
+  font-size: 1.125rem; /* 18px */
+}
+
+.invitation-text p {
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2a4365;
+  margin-bottom: 0.5rem;
+}
+
+/* Info grid */
+.info-grid {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-item {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.info-title {
+  font-weight: 600;
+  color: #2c5282;
+  margin-bottom: 0.25rem;
+}
+
+.info-subtext {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+/* Note box */
+.note-box {
+  background-color: #ebf8ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #2c5282;
+  text-align: left;
+}
+
+.note-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.note-text {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Dark card buttons */
+.btn-submit {
+  width: 100%;
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-submit:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.label {
+  font-weight: 600;
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #90cdf4;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Footer icons */
+.footer-icons {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #bfdbfe;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.icon-opacity {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.8;
+}
+
+/* Overlay and animation */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(30, 58, 138, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.bounce-animation {
+  animation: bounce 1s infinite;
+  text-align: center;
+  color: white;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Bounce keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+}
+
+.inline-text {
+  font-style: italic;
+  color: #4a5568;
+}
+
+.highlight-name {
+  font-weight: bold;
+  color: #2563eb;
+  background-color: #bfdbfe;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+
+/* Căn bản cho mobile */
+@media (max-width: 640px) {
+  /* Giảm padding và margin cho container */
+  .page-container-light,
+  .page-container-dark {
+    padding: 0.5rem;
+  }
+
+  /* Card thu nhỏ, padding nhỏ hơn */
+  .card-light,
+  .card-dark {
+    max-width: 100%;
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+
+  /* Tiêu đề giảm cỡ chữ */
+  .title-large {
+    font-size: 1.75rem; /* giảm từ 2.25rem */
+  }
+
+  .title-medium,
+  .title-medium-dark {
+    font-size: 1.25rem; /* giảm từ 1.5rem và 1.875rem */
+  }
+
+  /* Text invitation và note giảm font-size */
+  .invitation-text,
+  .note-text {
+    font-size: 1rem;
+  }
+
+  /* Lưới thông tin chuyển thành cột dọc */
+  .info-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info-item {
+    flex: 1 1 100%;
+  }
+
+  /* Hình ảnh thu nhỏ */
+  .image-small {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* Button full width và padding nhỏ hơn */
+  .btn-primary,
+  .btn-submit {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Footer icons thu nhỏ */
+  .footer-icons {
+    gap: 1rem;
+  }
+
+  .icon-opacity {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Form input full width */
+  .input {
+    font-size: 1rem;
+  }
+
+  /* Giảm margin các phần */
+  .image-container,
+  .header-section,
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .info-grid {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .info-item {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .image-medium {
+    max-width: 100%;
+    height: auto;
+    height: 9rem;
+  }
+  .info-title {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .info-subtext {
+    font-size: 0.9rem;
+  }
+}
