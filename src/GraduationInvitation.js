@@ -39,7 +39,7 @@ const GraduationInvitation = () => {
               <div className="info-item">
                 <img 
                   src="me.jpg" 
-                  alt="Calendar showing graduation date: June 15, 2024" 
+                  alt="Calendar showing graduation date: 2025" 
                   className="image-medium rounded"
                 />
                 <p className="info-title">Thời gian</p>
@@ -58,7 +58,7 @@ const GraduationInvitation = () => {
             </div>
 
             <div className="note-box">
-              <p className="note-title">📝 Ghi chú:</p>
+              <p className="note-title">📝 Note:</p>
               <p className="note-text">
                 {/* <h3>
                     Xin vui lòng makeup, lên đồ đơn giản. <span className="inline-text">"Sợ đẹp hơn tui thoi"</span>
@@ -104,7 +104,7 @@ const GraduationInvitation = () => {
             className="image-small mb-1"
           />
           <h1 className="title-medium-dark">LỄ TỐT NGHIỆP 2025</h1>
-          <p className="subtitle-dark">Chào mừng bạn đến với buổi lễ đặc biệt</p>
+          <p className="subtitle-dark">Mừng bạn đến với buổi lễ đặc biệt</p>
         </div>
 
         <form onSubmit={handleSubmit} className="form">
@@ -115,7 +115,7 @@ const GraduationInvitation = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Nhập không thiếu một chữ lun nha😉"
+              placeholder="Nhập không thiếu chữ nào nha😉"
               className="input"
               required
             />
