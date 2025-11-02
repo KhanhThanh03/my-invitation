@@ -357,7 +357,7 @@
 
   /* Tiêu đề giảm cỡ chữ */
   .title-large {
-    font-size: 1.75rem; /* giảm từ 2.25rem */
+    font-size: 1.5rem; /* giảm từ 2.25rem */
   }
 
   .title-medium,
