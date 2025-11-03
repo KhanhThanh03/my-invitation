@@ -43,7 +43,7 @@ const GraduationInvitation = () => {
                   className="image-medium rounded"
                 />
                 <p className="info-title">Thời gian</p>
-                <p>11:00-12:00, Ngày 27/11/2025</p>
+                <p>10:00-11:00, Ngày 27/11/2025</p>
               </div>
               <div className="info-item">
                 <img 
